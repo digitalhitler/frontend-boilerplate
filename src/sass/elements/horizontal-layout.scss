@@ -1,0 +1,66 @@
+body.tag-sys-horizontal-layout {
+
+  nav#nav {
+    display: none !important;
+  }
+
+  .horizontal-layout {
+    display: block;
+    position: fixed;
+    border: 5px green solid;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 100%;
+    bottom: 0;
+    //overflow-x: scroll;
+    //overflow-y: hidden;
+    overflow: hidden;
+    z-index: $zindex-horizontal-layout-base;
+
+    .frame-content {
+      //display: inline-block;
+      max-height: 100%;
+      background-color: red;
+      margin-right: 20px;
+    }
+
+    .nav-main {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 6rem;
+      z-index: $zindex-horizontal-layout-nav;
+
+      .logo {
+        margin: 0 2rem;
+        img {
+          height: 6.4rem;
+          width: 6.4rem;
+          max-height: 30%;
+          max-width: 30%;
+        }
+      }
+    }
+
+    .siding-decoration {
+      background-color: $baseNeutralWindy;
+
+      &:before {
+        display: block;
+        position: relative;
+        height: 100%;
+        width: 60px;
+        content: '';
+        background-color: $baseNeutralWindy;
+      }
+
+      &.tile-3 {
+        background-image: urL("/content/images/decorations/tile-3.jpg");
+      }
+
+      .gutter {}
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.with-sidebar {
+  aside.siding-decoration {
+    text-align: center;
+    overflow: hidden;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    width: 30%;
+    margin-bottom: 0px;
+    background-color: #F6F6F6;
+    top: 0;
+  }
+
+  main.content {
+    overflow-x: hidden;
+    overflow-y: scroll;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+  }
+}

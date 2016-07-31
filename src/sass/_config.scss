@@ -1,0 +1,88 @@
+$fontMain:      "Roboto", system, -apple-system, ".SFNSDisplay-Regular", "Helvetica Neue", Helvetica, sans-serif;
+$fontAlternate: "Merriweather", "Roboto", system, -apple-system, sans-serif;
+$fontSymbolic:  "Helvetica Neue", Helvetica, Arial;
+$fontCode:      "Fira Code", "Fira Mono", "Consolas", "Monaco", monospaced;
+
+
+$remBaseSize:     10px;
+$fontSize:        1.4rem;
+$fontLargerSize:  1.6rem;
+
+$shadowTextTiny: 1px 1px 0 #40A2F7, 2px 2px 0 rgba(0, 0, 0, 0.1);
+
+$breakpoint-phone:		30em;
+$breakpoint-tablet:		50em;
+$breakpoint-desktop:	70em;
+
+$color-green-85: #36D995;
+$color-green-72: #2DB77E;
+
+$color-yellow-100:	#FFC336;
+
+$color-gray-97: #F2F3F5;
+$color-gray-90: #E1E2E6;
+$color-gray-85: #D4D5D9;
+$color-gray-65: #9D9FA6;
+$color-gray-50: #737580;
+$color-gray-40: #595B66;
+$color-gray-25: #363740;
+$color-gray-15: #1F2026;
+
+
+$baseLight:             rgba(248, 248, 248, 1);
+$baseDark:              rgba(45, 45, 41, 1);
+
+$basePrimary:           rgba(33, 90, 109, 1);
+$basePrimaryL:          rgba(69, 166, 166, 1);
+
+$baseRed:               rgba(199, 57,  47,   1);
+$baseRedD:              rgba(227, 92,  71,   1);
+$baseRedDesaturate:     rgba(212, 89,  89,   1);
+$baseRedContrast:       rgba(208, 64,   0,   1);
+
+$baseGreenShiny:        rgba(223, 236, 230,  1);
+$baseGreenLight:        rgba(152, 202, 168,  1);
+$baseGreen:             rgba(66,  190, 118,  1);
+$baseGreenDark:         rgba(0,   130, 75,   1);
+
+$baseLightBlue:         rgba(0,   145, 255,  1);
+$baseNeutralBlue:       rgba(0,   115, 214,  1);
+$baseSkyBlue:           rgba(0,   99,  179,  1);
+$baseSafeBlue:          rgba(0,   68,  221,  1);
+$baseDarkBlue:          rgba(0,   60,  108,  1);
+
+
+$baseYellowLight:       rgba(248, 223, 100,  1);
+$baseYellow:            darken($baseYellowLight, 30%);
+$baseYellowBright:      rgba(248, 238, 153, 1);
+
+$baseOrange:            rgba(221, 127, 0, 1);
+
+$baseViolet:            rgba(102, 51,  102,  1);
+$baseVioletL:           lighten($baseViolet, 20%);
+$baseVioletT:           darken($baseViolet, 20%);
+
+
+$baseNeutralShiny:      rgba(238, 241, 246,   1);
+$baseNeutralLight:      rgba(237, 243, 249,   1);
+$baseNeutralFoggy:      rgba(206, 216, 230,   1);
+$baseNeutralRainy:      rgba(165, 185, 209,   1);
+$baseNeutralWindy:      rgba(94,  114, 131,   1);
+$baseNeutralStorm:      rgba(73,  106, 147,   1);
+
+$zindex-nav:                      600;
+$zindex-horizontal-layout-base:   700;
+$zindex-horizontal-layout-nav:   1000;
+// * NAVIGATION
+$nav-height:              6rem;
+$nav-logo-font-size:      1.6rem;
+$nav-background:          transparentize($baseLight, 0.05);
+
+// * HEADER
+$header-padding-base:     3rem;
+$header-padding-top:      $nav-height + $header-padding-base;
+$header-padding-bottom:   $header-padding-base;
+
+// * SINGLE POST
+$post-padding-top:        $nav-height + 2rem;
+$post-font-size:          1.6rem;

@@ -1,0 +1,129 @@
+/* ==========================================================================
+   Post Page
+   ========================================================================== */
+article.post {
+  padding-top: $post-padding-top;
+
+  #push {
+    header.post-header {
+      h1.post-title {
+        position: relative;
+        color: $baseDark;
+        font-size: 4rem;
+        line-height: 1.375em;
+        font-weight: 700;
+        text-indent: -1px;
+        margin: 0.25em 0 0.75em;
+
+        &:before {
+          content: '';
+          position: absolute;
+          left: 0;
+          bottom: -0.334em;
+          width: 1em;
+          margin-bottom: -2px;
+          border-bottom: 0.7rem solid $baseOrange;
+        }
+
+        a {
+          text-decoration: none;
+          color: inherit;
+          font-weight: inherit;
+        }
+      }
+    }
+    section.post-content {
+      font-size: $post-font-size;
+    }
+    footer.post-footer {
+
+    }
+    aside.post-comments {
+
+    }
+  }
+}
+
+
+/* ==========================================================================
+   Post Footer
+   ========================================================================== */
+
+.post-footer {
+  margin: 4em 0;
+
+  &:after {
+    clear: both;
+    content: '';
+    display: table;
+  }
+
+  .post-tags {
+    float: left;
+    max-width: 60%;
+
+    a {
+      font-size: $fontSize;
+      line-height: $fontSize * 1.4;
+      display: inline-block;
+      border: 0;
+      margin-bottom: 0.286em;
+      margin-right: 0.286em;
+      padding: 0.286em 0.714em;
+      border-radius: 2px;
+      color: $baseDark;
+      border-bottom: 1px darken($baseNeutralFoggy, 10%) solid;
+      text-shadow: 0 0 2px transparentize($baseNeutralFoggy, 0.5);
+      background: $baseNeutralFoggy;
+      font-weight: 300;
+
+      &:hover,
+      &:focus {
+        background: lighten($baseNeutralFoggy, 20%);
+      }
+    }
+  }
+
+  .post-share {
+    float: right;
+
+    a {
+      font-size: 0.75em;
+      display: block;
+      width: 2em;
+      height: 2em;
+      line-height: 2em;
+      text-align: center;
+      text-decoration: none;
+      padding: 0.334em;
+      margin: 0 0 0.334em 0.334em;
+      float: left;
+      border-radius: 2px;
+      color: #fff;
+      background: $color-gray-50;
+
+      &:hover,
+      &:focus {
+
+      }
+
+      &:before {
+        margin: auto;
+      }
+
+      span {
+        display: none;
+      }
+
+      &.icon-twitter {
+        background-color: #3ea9dd;
+      }
+      &.icon-facebook {
+        background-color: #3c5a98;
+      }
+      &.icon-gplus {
+        background-color: #d14836;
+      }
+    }
+  }
+}
